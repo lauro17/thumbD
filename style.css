@@ -1,0 +1,85 @@
+#img{position: relative; width: 480px; height: 300px;}
+#image{
+	width:100%; 
+	height: 100%;
+}
+#baixarImagem{
+	position: absolute; 
+	left: 50%; 
+	margin-left: -100px;  
+	top: 50%;
+	margin-top: -75px; 
+	/*background-color: black; */
+	width:50%; 
+	height: 50%; 
+	color: #FFF;
+	display: none;
+	cursor: pointer;
+	opacity : 0.5;
+}
+#btn{
+	width:80%; 
+	height: 100%;
+	top: auto;
+	left: auto;
+}
+#img:hover #selecionar_resolucao{
+	display: block;
+}
+#img:hover #baixarImagem{
+	display: flex;
+	justify-content: center;
+}
+/*css do switch de selecão de resolução*/
+#selecionar_resolucao{	
+	position: absolute;
+	/*background-color: black; */
+	width: 150px;
+	height: 90px;
+	color: #FFF;
+	display: none;
+	padding: 0;
+}
+input[type="checkbox"] {
+	appearance: none;
+	width: 140px;
+	height: 80px;
+	background-color: #707070;
+	border-radius: 50px;
+	position: absolute;
+	cursor: pointer;
+	transition: .3s;
+	opacity : 0.3;
+}
+input[type="checkbox"]::before {
+	content: "";
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	background-color: #d5d5d5;
+	border-radius: 50%;
+	left: 10px;
+	top: 10px;
+	transition: .3s;
+}
+input[type="checkbox"]::after {
+	content: "SD";
+	position: absolute;
+	color: #34384b;
+	font-size: 20px;
+	left: 20px;
+	top: 29px;
+	transition: .3s;
+}
+input[type="checkbox"]:checked {
+	background: linear-gradient(91deg, #ff01a5d4, #4b00ffd4);
+}
+input[type="checkbox"]:checked:before {
+	background: #000;
+	left: 70px;
+}
+input[type="checkbox"]:checked::after {
+	content: "HD";
+	color: #FFF;
+	left: 85px;
+}

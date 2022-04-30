@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "thunbD",
+    "description": "Permite baixar a thunbemail de videos do youtube",
+    "version": "0.0.1",
+    "author":"LUIZ LAURO SILVA GONAÇALVES",
+    "action": {
+        "default_icon": "icons/icone16.png",
+        "default_popup": "index.html"
+    },
+    "icons": {
+        "16": "icons/icone16.png",
+        "32": "icons/icone32.png",
+        "48": "icons/icone48.png",
+        "128": "icons/icone128.png"
+    },
+    "permissions": [
+        "tabs"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ]
+}
