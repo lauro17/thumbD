@@ -10,9 +10,9 @@ document.addEventListener('DOMContentLoaded', function (tab) {
         var url = document.querySelector('#texto').value;
         let checkbox = document.getElementById('switch');
         if (checkbox.checked) {
-            download_imagem(url, "SD");
-        } else {
             download_imagem(url, "HD");
+        } else {
+            download_imagem(url, "SD");
         }
         // download_imagem(url , opcaoValor);
     });
